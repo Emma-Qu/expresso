@@ -7,8 +7,7 @@ print 'starting...'
 start = time.time()
 dict_wn = nltk.corpus.wordnet
 words = [w for w in list(set(w for w in dict_wn.words())) if ('_' not in w)]
-print 'loaded WordNet data.'
-print time.time()-start
+
 
 print 'starting to look for base lemmas...'
 base_lemmas = {}
